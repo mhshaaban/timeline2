@@ -107,7 +107,7 @@ pt.gooeyGolf.init = function() {
 	pt.gooeyGolf.ballOuterWrapper.append("circle")
 			.attr("class", "startCircle")
 			.attr("cx", 0)
-			.attr("cy", 50)
+			.attr("cy", 0)
 			.attr("r", 0)
 			.style("fill", "#81BC00");
 
@@ -192,7 +192,7 @@ pt.gooeyGolf.swingSimple1 = function() {
 			.enter().append("circle")
 				.attr("class", "ballSpeedCircle")
 				.attr("cx", function(d) { return pt.gooeyGolf.ballSpeedScale(d.BallSpeed); })
-				.attr("cy", 50)
+				.attr("cy", 350)
 				.attr("r", 0)
 				.style("fill", "#81BC00")
 				.transition().duration(1000)
