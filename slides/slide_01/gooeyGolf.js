@@ -140,7 +140,6 @@ pt.gooeyGolf.swingSimple1 = function() {
 		.style("opacity", 1);
 	
 	d3.select("#gooey-golf .image")
-		.attr("xlink:href", "@Url.Content("~/timeline2/img/yalbugha.png")")
 		.style("opacity", 1);
 	
 	setTimeout(function() {
