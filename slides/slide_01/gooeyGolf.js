@@ -49,7 +49,7 @@ pt.gooeyGolf.init = function() {
     	
 	//Set up X axis label
 	svg.append("text")
-		.attr("class", "x title")
+		.attr("class", "x-title")
 		.attr("transform", "translate(" + width + "," + height + ")")
 		.text("1382 - Reign of Sultan aẓ-Ẓāhir Barqūq");
 	
