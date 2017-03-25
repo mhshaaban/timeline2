@@ -36,20 +36,20 @@ pt.gooeyGolf.init = function() {
     svg.append("text")
     	.attr("class", "date")
         .attr("x", width/2)
-        .attr("y", -50)
+        .attr("y", -100)
         .style("text-anchor", "middle")
         .text("");
     svg.append("text")
     	.attr("class", "event")
         .attr("x", width/2)
-        .attr("y", -10)
+        .attr("y", -50)
         .style("text-anchor", "middle")
-	      .style("opacity", 0)
+	.style("opacity", 0)
         .text("");
     svg.append("image")
     	.attr("class", "image")
         .attr("x", width/2)
-        .attr("y", -20)
+        .attr("y", -10)
 	.attr("xlink:href","/timeline2/img/yalbugha.png")
 	.style("opacity", 0);	
 	
