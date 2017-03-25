@@ -98,6 +98,12 @@ pt.gooeyGolf.init = function() {
 	  .attr("class", "x axis")
 	  .attr("transform", "translate(" + 0 + "," + height + ")")
 	  .call(pt.gooeyGolf.ballSpeedAxis);
+	
+	//Set up X axis label
+	svg.append("text")
+		.attr("class", "x title")
+		.attr("transform", "translate(" + width + "," + (height - 10) + ")")
+		.text("1382 - Reign of Sultan aẓ-Ẓāhir Barqūq");
 
 	//Outer wrapper for the circles
 	pt.gooeyGolf.ballOuterWrapper = pt.gooeyGolf.svg.append("g")
