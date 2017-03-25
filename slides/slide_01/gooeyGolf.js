@@ -376,5 +376,5 @@ pt.gooeyGolf.swingSimple3 = function() {
 		
 		//EXIT
 		ballSpeedWrapper.exit().remove();	
-		
-	}//swingSimple3
+	}//swingSimple	
+}//swingSimple3
