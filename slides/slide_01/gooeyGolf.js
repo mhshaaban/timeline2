@@ -50,7 +50,7 @@ pt.gooeyGolf.init = function() {
 	//Set up X axis label
 	svg.append("text")
 		.attr("class", "x-title")
-		.attr("transform", "translate(" + width + "," + height + ")")
+		.attr("transform", "translate(" + width + "," + (height - 10) + ")")
 		.text("1382 - Reign of Sultan aẓ-Ẓāhir Barqūq");
 	
     svg.append("image")
