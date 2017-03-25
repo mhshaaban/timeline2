@@ -45,7 +45,13 @@ pt.gooeyGolf.init = function() {
         .attr("y", -10)
         .style("text-anchor", "middle")
 	      .style("opacity", 0)
-        .text("");	
+        .text("");
+    svg.append("image")
+    	.attr("class", "image")
+        .attr("x", width/2)
+        .attr("y", -20)
+	.attr("xlink:href", "@Url.Content("~/timeline2/img/yalbugha.png")")
+	.style("opacity", 0);	
 	
 	pt.gooeyGolf.data = [];
 	pt.gooeyGolf.numSwings = 0;
@@ -131,6 +137,10 @@ pt.gooeyGolf.swingSimple1 = function() {
 	
 	d3.select("#gooey-golf .event")
 		.text("Amir Yalbugha revolts")
+		.style("opacity", 1);
+	
+	d3.select("#gooey-golf .image")
+		.attr("xlink:href", "@Url.Content("~/timeline2/img/yalbugha.png")")
 		.style("opacity", 1);
 	
 	setTimeout(function() {
