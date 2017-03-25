@@ -96,13 +96,13 @@ pt.gooeyGolf.init = function() {
 	//Append x axis to chart
 	pt.gooeyGolf.svg.append("g")
 	  .attr("class", "x axis")
-	  .attr("transform", "translate(" + 0 + "," + height + ")")
+	  .attr("transform", "translate(" + 0 + "," + (height - 20) + ")")
 	  .call(pt.gooeyGolf.ballSpeedAxis);
 	
 	//Set up X axis label
 	svg.append("text")
 		.attr("class", "x title")
-		.attr("transform", "translate(" + width + "," + (height - 10) + ")")
+		.attr("transform", "translate(" + width + "," + (height - 20) + ")")
 		.text("1382 - Reign of Sultan aẓ-Ẓāhir Barqūq");
 
 	//Outer wrapper for the circles
