@@ -289,8 +289,9 @@ pt.gooeyGolf.swingSimple2 = function() {
 		
 		//EXIT
 		ballSpeedWrapper.exit().remove();	
-		
-	}//swingSimple2
+	
+	}//swingSimple
+}//swingSimple2
 
 pt.gooeyGolf.swingSimple3 = function() {
 
