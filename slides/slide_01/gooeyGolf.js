@@ -50,7 +50,7 @@ pt.gooeyGolf.init = function() {
     	.attr("class", "image")
         .attr("x", width/2)
         .attr("y", -20)
-	.attr("xlink:href", "@Url.Content("~/timeline2/img/yalbugha.png")")
+	.attr("xlink:href","/timeline2/img/yalbugha.png")
 	.style("opacity", 0);	
 	
 	pt.gooeyGolf.data = [];
