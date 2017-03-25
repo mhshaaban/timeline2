@@ -8,21 +8,18 @@ pt.slideIdToFunctions = {
       pt.titleSlide.init();
     }
   },
-  'biggest-cities': {
+  'gooey-golf': {
     'init': function() {
-      pt.biggestCities.init();
+      pt.gooeyGolf.init();
     },
     '-1': function() {
-      pt.biggestCities.flyOut();
+      pt.gooeyGolf.swingSimple1();
     },
-    0: function() {
-      pt.biggestCities.placeCities();
+    '0': function() {
+      pt.gooeyGolf.swingSimple2();
     },
     1: function() {
-      pt.biggestCities.highlightCities();
-    },
-    2: function() {
-      pt.biggestCities.clusterCountry();
+      pt.gooeyGolf.swingSimple3();
     }
   }
 };   
@@ -31,6 +28,6 @@ function removeSVGs() {
 
   //Remove (heavy) all existing svgs currently running
   
-  d3.select('#biggest-cities #biggestCities svg').remove();
+  d3.select('#gooey-golf #gooeyGolf svg').remove();
   
 }
