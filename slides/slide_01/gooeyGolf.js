@@ -17,7 +17,7 @@ pt.gooeyGolf.init = function() {
 	};
 
 	var width = $(".slides").width()*0.7 - margin.left - margin.right;
-	var height = 150;
+	var height = var height = $(".slides").height()*0.9 - margin.top - margin.bottom;
 
 	//SVG container
 	pt.gooeyGolf.svg = d3.select('#gooey-golf #gooeyGolf')
@@ -107,7 +107,7 @@ pt.gooeyGolf.init = function() {
 	pt.gooeyGolf.ballOuterWrapper.append("circle")
 			.attr("class", "startCircle")
 			.attr("cx", 0)
-			.attr("cy", 0)
+			.attr("cy", 50)
 			.attr("r", 0)
 			.style("fill", "#81BC00");
 
