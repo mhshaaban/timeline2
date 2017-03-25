@@ -96,7 +96,7 @@ pt.gooeyGolf.init = function() {
 	//Append x axis to chart
 	pt.gooeyGolf.svg.append("g")
 	  .attr("class", "x axis")
-	  .attr("transform", "translate(0," + 150 + ")")
+	  .attr("transform", "translate(0," + 0 + ")")
 	  .call(pt.gooeyGolf.ballSpeedAxis);
 
 	//Outer wrapper for the circles
