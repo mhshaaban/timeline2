@@ -91,7 +91,7 @@ pt.gooeyGolf.init = function() {
 		
 	//Create axes for the Ball Speed chart
 	pt.gooeyGolf.ballSpeedScale = d3.scale.linear()
-		.domain([1250, 1382])
+		.domain([1250, 1517])
 		.range([0, width]);
 	pt.gooeyGolf.ballSpeedAxis = d3.svg.axis()
 		.scale(pt.gooeyGolf.ballSpeedScale)
@@ -175,7 +175,7 @@ pt.gooeyGolf.swingSimple1 = function() {
 		var index = pt.gooeyGolf.data.length-1;
 
 		//Updates scale
-		pt.gooeyGolf.ballSpeedScale.domain([1300, Math.max(meanBallSpeed, d3.max(pt.gooeyGolf.data, function(d) { return d.BallSpeed; }))*1.2]);
+		pt.gooeyGolf.ballSpeedScale.domain([1341, 1382]);
 		//Update the x axis
 		pt.gooeyGolf.ballSpeedAxis.scale(pt.gooeyGolf.ballSpeedScale);
 		pt.gooeyGolf.svg.select(".x.axis")
@@ -199,7 +199,7 @@ pt.gooeyGolf.swingSimple1 = function() {
 			.enter().append("circle")
 				.attr("class", "ballSpeedCircle")
 				.attr("cx", function(d) { return pt.gooeyGolf.ballSpeedScale(d.BallSpeed); })
-				.attr("cy", 900)
+				.attr("cy", 850)
 				.attr("r", 0)
 				.style("fill", "#81BC00")
 				.transition().duration(1000)
@@ -264,7 +264,7 @@ pt.gooeyGolf.swingSimple2 = function() {
 		var index = pt.gooeyGolf.data.length-1;
 
 		//Updates scale
-		pt.gooeyGolf.ballSpeedScale.domain([1300, Math.max(meanBallSpeed, d3.max(pt.gooeyGolf.data, function(d) { return d.BallSpeed; }))*1.2]);
+		pt.gooeyGolf.ballSpeedScale.domain([1341, 1382]);
 		//Update the x axis
 		pt.gooeyGolf.ballSpeedAxis.scale(pt.gooeyGolf.ballSpeedScale);
 		pt.gooeyGolf.svg.select(".x.axis")
@@ -288,7 +288,7 @@ pt.gooeyGolf.swingSimple2 = function() {
 			.enter().append("circle")
 				.attr("class", "ballSpeedCircle")
 				.attr("cx", function(d) { return pt.gooeyGolf.ballSpeedScale(d.BallSpeed); })
-				.attr("cy", 0)
+				.attr("cy", 850)
 				.attr("r", 0)
 				.style("fill", "#81BC00")
 				.transition().duration(1000)
@@ -352,7 +352,7 @@ pt.gooeyGolf.swingSimple3 = function() {
 		var index = pt.gooeyGolf.data.length-1;
 
 		//Updates scale
-		pt.gooeyGolf.ballSpeedScale.domain([1300, Math.max(meanBallSpeed, d3.max(pt.gooeyGolf.data, function(d) { return d.BallSpeed; }))*1.2]);
+		pt.gooeyGolf.ballSpeedScale.domain([1341,1382]);
 		//Update the x axis
 		pt.gooeyGolf.ballSpeedAxis.scale(pt.gooeyGolf.ballSpeedScale);
 		pt.gooeyGolf.svg.select(".x.axis")
@@ -376,7 +376,7 @@ pt.gooeyGolf.swingSimple3 = function() {
 			.enter().append("circle")
 				.attr("class", "ballSpeedCircle")
 				.attr("cx", function(d) { return pt.gooeyGolf.ballSpeedScale(d.BallSpeed); })
-				.attr("cy", 0)
+				.attr("cy", 850)
 				.attr("r", 0)
 				.style("fill", "#81BC00")
 				.transition().duration(1000)
