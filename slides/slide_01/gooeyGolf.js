@@ -17,7 +17,7 @@ pt.gooeyGolf.init = function() {
 	};
 
 	var width = $(".slides").width()*0.7 - margin.left - margin.right;
-	var height = var height = $(".slides").height()*0.9 - margin.top - margin.bottom;
+	var height = $(".slides").height()*0.9 - margin.top - margin.bottom;
 
 	//SVG container
 	pt.gooeyGolf.svg = d3.select('#gooey-golf #gooeyGolf')
