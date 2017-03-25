@@ -36,27 +36,21 @@ pt.gooeyGolf.init = function() {
     svg.append("text")
     	.attr("class", "date")
         .attr("x", width/2)
-        .attr("y", -100)
+        .attr("y", -40)
         .style("text-anchor", "middle")
         .text("");
     svg.append("text")
     	.attr("class", "event")
         .attr("x", width/2)
-        .attr("y", -50)
+        .attr("y", -30)
         .style("text-anchor", "middle")
 	.style("opacity", 0)
         .text("");
-    	
-	//Set up X axis label
-	svg.append("text")
-		.attr("class", "x-title")
-		.attr("transform", "translate(" + width + "," + (height - 10) + ")")
-		.text("1382 - Reign of Sultan aẓ-Ẓāhir Barqūq");
 	
     svg.append("image")
     	.attr("class", "image")
 	.attr("x", width/5)
-        .attr("y", -10)
+        .attr("y", -150)
 	.attr("xlink:href","/timeline2/img/yalbugha.png")
 	.style("opacity", 0);	
 	
