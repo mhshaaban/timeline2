@@ -53,6 +53,7 @@ pt.gooeyGolf.init = function() {
         .attr("x", width/2)
         .attr("y", 90)
         .style("text-anchor", "middle")
+	.style("opacity", 0)
         .text("");	
 	
     	
@@ -136,16 +137,15 @@ pt.gooeyGolf.swingSimple1 = function() {
 		.attr("r", 0);
 
 	d3.select("#gooey-golf .image")
-		.transition().duration(1000)
+		.transition().duration(1500)
 		.style("opacity", 1);
 	
 	d3.select("#gooey-golf .date")
-		.transition().duration(1000)
-		.transition().duration(500)
+		.transition().duration(1500)
 		.text("760 A.H. / 1360 C.E.");
 	
 	d3.select("#gooey-golf .event")
-		.transition().duration(1000)
+		.transition().duration(1500)
 		.text("Amir Yalbugha revolts")
 		.style("opacity", 1);
 	
@@ -216,11 +216,6 @@ pt.gooeyGolf.swingSimple1 = function() {
 
 pt.gooeyGolf.swingSimple2 = function() {
 
-	//Remove previous circles
-	d3.selectAll("#gooeyGolf .ballSpeedCircle")
-		.transition().duration(500)
-		.attr("r", 0)
-		.remove();
 
 	//Clear previous intervals
 	clearInterval(pt.gooeyGolf.swingInterval);
@@ -233,10 +228,11 @@ pt.gooeyGolf.swingSimple2 = function() {
 		.attr("r", 0);
 
 	d3.select("#gooey-golf .date")
-		.transition().duration(500)
+		.transition().duration(1500)
 		.text("770 A.H. / 1370 C.E.");
 	
 	d3.select("#gooey-golf .event")
+		.transition().duration(1500)
 		.text("Amir Yalbugha died")
 		.style("opacity", 1);
 	
