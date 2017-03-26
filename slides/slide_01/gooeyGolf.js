@@ -51,7 +51,7 @@ pt.gooeyGolf.init = function() {
     svg.append("text")
     	.attr("class", "date")
         .attr("x", width/2)
-        .attr("y", 80)
+        .attr("y", 90)
         .style("text-anchor", "middle")
         .text("");	
 	
