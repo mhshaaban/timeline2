@@ -136,13 +136,16 @@ pt.gooeyGolf.swingSimple1 = function() {
 		.attr("r", 0);
 
 	d3.select("#gooey-golf .image")
+		.transition().duration(1000)
 		.style("opacity", 1);
 	
 	d3.select("#gooey-golf .date")
+		.transition().duration(1000)
 		.transition().duration(500)
 		.text("760 A.H. / 1360 C.E.");
 	
 	d3.select("#gooey-golf .event")
+		.transition().duration(1000)
 		.text("Amir Yalbugha revolts")
 		.style("opacity", 1);
 	
