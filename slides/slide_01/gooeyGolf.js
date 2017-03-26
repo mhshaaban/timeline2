@@ -42,18 +42,18 @@ pt.gooeyGolf.init = function() {
 	
 	//Append text
     svg.append("text")
-    	.attr("class", "date")
-        .attr("x", width/2)
-        .attr("y", 20)
-        .style("text-anchor", "middle")
-        .text("");
-    svg.append("text")
     	.attr("class", "event")
         .attr("x", width/2)
-        .attr("y", 40)
+        .attr("y", 60)
         .style("text-anchor", "middle")
 	.style("opacity", 0)
         .text("");
+    svg.append("text")
+    	.attr("class", "date")
+        .attr("x", width/2)
+        .attr("y", 80)
+        .style("text-anchor", "middle")
+        .text("");	
 	
     	
 	
