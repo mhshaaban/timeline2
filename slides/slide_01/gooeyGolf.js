@@ -217,6 +217,11 @@ pt.gooeyGolf.swingSimple1 = function() {
 
 pt.gooeyGolf.swingSimple2 = function() {
 
+	//Remove previous circles
+	d3.selectAll("#gooeyGolf .ballSpeedCircle")
+		.transition().duration(500)
+		.attr("r", 0)
+		.remove();
 
 	//Clear previous intervals
 	clearInterval(pt.gooeyGolf.swingInterval);
