@@ -142,6 +142,7 @@ pt.gooeyGolf.swingSimple1 = function() {
 	
 	d3.select("#gooey-golf .date")
 		.transition().duration(1500)
+		.style("opacity", 1)
 		.text("760 A.H. / 1360 C.E.");
 	
 	d3.select("#gooey-golf .event")
