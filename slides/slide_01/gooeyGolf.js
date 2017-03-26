@@ -36,7 +36,7 @@ pt.gooeyGolf.init = function() {
     svg.append('image')
     	.attr("class", "image")
 	.attr("x", width/4.5)
-	.attr("y", -500)
+	.attr("y", -400)
 	.attr("xlink:href","/timeline2/img/yalbugha.png")
 	.style("opacity", 0);	
 	
@@ -100,7 +100,7 @@ pt.gooeyGolf.init = function() {
 	//Append x axis to chart
 	pt.gooeyGolf.svg.append("g")
 	  .attr("class", "x axis")
-	  .attr("transform", "translate(" + 0 + "," + (height - 20) + ")")
+	  .attr("transform", "translate(" + 0 + "," + (height - 40) + ")")
 	  .call(pt.gooeyGolf.ballSpeedAxis);
 
 	//Outer wrapper for the circles
