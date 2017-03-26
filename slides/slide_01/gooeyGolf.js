@@ -36,6 +36,7 @@ pt.gooeyGolf.init = function() {
     svg.append("image")
     	.attr("class", "image")
 	.attr("x", width/5)
+	.attr("y", -100)
 	.attr("xlink:href","/timeline2/img/yalbugha.png")
 	.style("opacity", 0);	
 	
@@ -134,6 +135,9 @@ pt.gooeyGolf.swingSimple1 = function() {
 		.transition().duration(1000)
 		.attr("r", 0);
 
+	d3.select("#gooey-golf .image")
+		.style("opacity", 1);
+	
 	d3.select("#gooey-golf .date")
 		.transition().duration(500)
 		.text("760 A.H. / 1360 C.E.");
@@ -142,8 +146,7 @@ pt.gooeyGolf.swingSimple1 = function() {
 		.text("Amir Yalbugha revolts")
 		.style("opacity", 1);
 	
-	d3.select("#gooey-golf .image")
-		.style("opacity", 1);
+	
 	
 	setTimeout(function() {
 
