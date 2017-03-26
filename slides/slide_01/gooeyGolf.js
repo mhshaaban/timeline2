@@ -32,7 +32,15 @@ pt.gooeyGolf.init = function() {
 	/////////////////////////////// Append titles /////////////////////////////
 	///////////////////////////////////////////////////////////////////////////
 
-    //Append text
+    
+    svg.append("image")
+    	.attr("class", "image")
+	.attr("x", width/5)
+        .attr("y", -80)
+	.attr("xlink:href","/timeline2/img/yalbugha.png")
+	.style("opacity", 0);	
+	
+	//Append text
     svg.append("text")
     	.attr("class", "date")
         .attr("x", width/2)
@@ -47,12 +55,7 @@ pt.gooeyGolf.init = function() {
 	.style("opacity", 0)
         .text("");
 	
-    svg.append("image")
-    	.attr("class", "image")
-	.attr("x", width/5)
-        .attr("y", -80)
-	.attr("xlink:href","/timeline2/img/yalbugha.png")
-	.style("opacity", 0);	
+    	
 	
 	pt.gooeyGolf.data = [];
 	pt.gooeyGolf.numSwings = 0;
