@@ -33,9 +33,9 @@ pt.gooeyGolf.init = function() {
 	///////////////////////////////////////////////////////////////////////////
 
     
-    svg.append("image")
+    svg.append('image')
     	.attr("class", "image")
-	.attr("x", width/5)
+	.attr("x", width/4.5)
 	.attr("y", -100)
 	.attr("xlink:href","/timeline2/img/yalbugha.png")
 	.style("opacity", 0);	
